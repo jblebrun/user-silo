@@ -1,0 +1,19 @@
+[package]
+name = "user-silo-trusted"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+oak_crypto = { git="https://github.com/jblebrun/oak.git", branch="path-exps" }
+oak_grpc_utils = { git="https://github.com/jblebrun/oak.git", branch="path-exps" }
+tonic-build = { version = "*" }
+prost = "*"
+
+[dependencies]
+async-trait = "*"
+oak_crypto = { git="https://github.com/jblebrun/oak.git", branch="path-exps" }
+prost = "*"
+tokio = "*"
+tonic = "*"
+tower = "*"
+anyhow = "*"
