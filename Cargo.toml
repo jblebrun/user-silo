@@ -1,0 +1,24 @@
+[package]
+name = "oak_user_silo_trusted"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+oak_grpc_utils = { git = "http://github.com/jblebrun/oak", branch="path-exps" }
+
+[dependencies]
+async-trait = { version = "*", default-features = false }
+oak_containers_orchestrator_client = { git = "http://github.com/jblebrun/oak", branch="path-exps" }
+oak_crypto = { git = "http://github.com/jblebrun/oak", branch="path-exps" }
+oak_remote_attestation = { git = "http://github.com/jblebrun/oak", branch="path-exps" }
+anyhow = "*"
+env_logger = "*"
+log = "*"
+prost = "*"
+prost-types = "*"
+tokio = { version = "*", features = ["rt-multi-thread", "macros", "sync"] }
+tokio-stream = { version = "*", features = ["net"] }
+tonic ="*" 
+async-stream = "*"
+bytes = "*"
+tower = "*"
